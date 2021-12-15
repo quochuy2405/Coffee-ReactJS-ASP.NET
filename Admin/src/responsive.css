@@ -1,0 +1,104 @@
+
+@media screen and (max-width: 600px) {
+  .App .Admin_main .body_render .itemTable{
+    width: 800px;
+    margin: 0 auto;
+ }
+  .App .Login .loginFrom {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .Revenue {
+    display: block;
+    padding: 0 40px;
+    overflow: scroll;
+
+    }
+    .Revenue div {
+      margin: 35px 0;
+      height: 64%
+    }
+  .App .Login .loginFrom .img_group img {
+    border-radius: 0;
+  }
+  .App .SignIn .signinFrom {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .App .SignIn .signinFrom .img_group img {
+    border-radius: 0;
+  }
+ 
+  .App .Admin .Admin_main .main_menu{
+    min-width: 100%;
+    position: absolute;
+    transform: translateX(-100%);
+    z-index: 999;
+    width: 30%;
+    height: calc(100vh - 44px);
+    transition: transform ease 0.3s;
+  }
+  .App .Admin .Admin_main .close_admin {
+    visibility: visible;
+  }
+
+  .App .Admin .Admin_main .bar_admin{
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 1124px) and (min-width: 601px) {
+  .App .Admin_main .body_render .itemTable{
+    width: 800px;
+    margin: 0 auto;
+ }
+ .Revenue {
+display: block;
+padding: 0 80px;
+overflow: scroll;
+}
+.Revenue div {
+  margin: 35px 0;
+  height: 64%;
+}
+
+  .App .Admin .Admin_main .main_menu{
+    min-width: 300px;
+    position: absolute;
+    transform: translateX(-100%);
+    z-index: 999;
+    width: 30%;
+    height:100% ;
+    transition: transform ease 0.3s;
+  }
+  .App .Admin .Admin_main .close_admin {
+    visibility: visible;
+  }
+  .App .Admin .Admin_main .bar_admin{
+    visibility: visible;
+  }
+  .App .body_page .titlePro{
+    max-width: 75px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (max-width: 1056px) and (min-width: 601px) {
+  
+
+  .App .Login .loginFrom {
+    width: 80%;
+    height: 80%;
+  }
+
+  
+  .App .SignIn .signinFrom {
+    width: 80%;
+    height: 80%;
+  }
+  
+}

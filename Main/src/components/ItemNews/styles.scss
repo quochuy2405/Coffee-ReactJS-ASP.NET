@@ -1,0 +1,61 @@
+@import "../../variables.css";
+.New{
+    position: relative;
+    margin: 20px 5px;
+
+    min-width:var(--width-iteam_news);
+    width:var(--width-iteam_news);
+    height: var(--height-iteam_news);
+
+
+
+    border-radius:  0 0 5px 5px;
+    box-shadow: 5px 3px 30px 8px rgba(199, 199, 199, 0.356);
+    background-color: white;
+    font-size: 0.8rem;
+    & .News_des{
+        max-height: 48px;
+        height: 42px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        padding: 0 5px;
+    
+    }
+    & .tilte_new{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 1.0rem;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+    & .New_img{
+        & img{
+            width:100%;
+            border-radius: 5px 5px 0 0;
+            flex-shrink: 0;
+        }
+    }
+    & .btn_news{
+        position: absolute;
+
+        width: 6rem;
+        height: 2rem;
+        right: 10px;
+        bottom: 10px;
+    
+        background-color: var(--color-main);
+        border-radius: 1rem;
+        cursor: pointer;
+        & p{
+            text-align: center;
+            line-height: 2rem;
+            font-weight: 600;
+            color: white;
+        }
+    }
+   
+}

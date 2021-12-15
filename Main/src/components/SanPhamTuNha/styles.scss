@@ -1,0 +1,83 @@
+.SanPhamTuNha {
+    min-height: 626px;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    & .Title_Section {
+        display: flex;
+        justify-content: center;
+        padding: 50px 0 20px 0;
+        & .icon {
+            font-size: 1.4rem;
+            color: var(--color-main);
+            opacity: 0.9;
+            padding: 0 10px;
+        }
+    }
+    & .List_Loai {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 40px;
+       
+        &  .Loai {
+            width: 100%;
+            height: 5rem;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 0.8rem;
+            & .Loai_img {
+                background-color: rgba(235, 235, 235, 0.637);
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                cursor: pointer;
+                margin: 0 auto;
+                &.active{
+                    background-color: var(--color-main);
+                }
+                & img{
+                    width: 50%;
+                    height: 80%;
+                    margin-top: 10px;
+                }
+            }
+        }
+     
+    }
+    & .ListItems{
+        width: 100%;
+        padding-bottom: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        .Item{
+            display: block;
+            min-width:var(--width-iteam_col);
+            width:var(--width-iteam_col);
+            height:var(--height-iteam_col);
+            padding: 10px  10px;
+        
+           & .Item_img img{
+            width: 100%;
+            height:100%;
+            padding: 0;
+            border-radius: 5px;
+            padding: 2px;
+            }
+            & .Item_description{
+                display: block;
+                padding-top: 5px;
+            }
+            & .plus{
+                position: absolute;
+                bottom: 10px;
+                right: 20px;
+                font-size: 2rem;
+                color: var(--color-main);
+                opacity: 0.8;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+:root{
+    
+    /* --color-main:#f38f0c;
+    --color-image-main:linear-gradient(to right, #faad47, #ff9e37); */
+    --color-main:#01a156;
+    --color-main-act:#028045;
+    --color-image-main:linear-gradient(to right, #1fb870,#e7c08d ,#acda64);
+   
+    --height-header: 4.8rem;
+    --radial-gradient-yellow: radial-gradient(100% 1636.16% at 100% 0%,#fff2d8 0%,#ffe7ba 100%);
+    --width-iteam:16.3rem;
+    --height-iteam:7rem;
+    --width-iteam_col:10.813rem;
+    --height-iteam_col:19rem;
+    --width-iteam_news:15rem;
+    --height-iteam_news:18rem;
+    --height-slider:75vh;
+
+}

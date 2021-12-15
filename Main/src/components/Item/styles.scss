@@ -1,0 +1,59 @@
+@import "../../variables.css";
+.Item{
+
+    display: flex;
+    position: relative;
+
+    height: var(--height-iteam);
+    width:var(--width-iteam);
+    min-width:calc(var(--width-iteam) - 30px);
+    padding: 10px  0px;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 5px 3px 30px 8px rgba(199, 199, 199, 0.356);
+    margin: 10px;
+    
+   & .Item_img img{
+    width: 7rem;
+    border-radius: 15px;
+    height:100%;
+    padding: 5px 10px;
+    object-fit: cover;
+    }
+    & .Item_description{
+        
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        justify-content: space-around;
+        & .des{ 
+            max-height: 48px;
+            height: 48px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+       
+        & p{
+            margin: 0;
+        }
+    }
+    & .plus{
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        font-size: 2rem;
+        color: var(--color-main);
+        opacity: 0.8;
+        &:hover{
+            cursor: pointer;
+            color: orangered !important;
+        }
+    }
+}
+.Center_Item{
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: center;
+}

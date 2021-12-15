@@ -1,0 +1,64 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+body {
+  background: rgb(239,254,255);
+  background: linear-gradient(180deg, rgba(239,254,255,1) 0%, rgba(239,246,255,1) 65%);
+  font-size: 0.95rem;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  overflow: hidden;
+}
+body .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.spinner-border{
+  position: absolute;
+  left: 50%;
+  top: 30%;
+}
+*::-webkit-scrollbar {
+  border-radius: 20px;
+  width: 4px;
+  height: 4px;
+  background-color: white;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  border-radius: 1px;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: rgb(170, 170, 170);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: rgb(230, 230, 230);
+}
+.btn-outline-success{
+  min-width: 94px;
+}

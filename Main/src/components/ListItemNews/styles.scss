@@ -1,0 +1,21 @@
+.ListItemNews{
+    padding-top: 30px;
+ 
+    & .tiltle_ListNews{
+           text-align: center;
+           margin-bottom: 20px;
+           display: flex;
+           justify-content: center;
+           & i{
+               line-height: 20px;
+               font-size: 1.4rem;
+               line-height: 40px;
+               margin-right: 10px;
+               color: var(--color-main);
+               opacity: 0.8;
+
+           }
+    }
+
+
+}

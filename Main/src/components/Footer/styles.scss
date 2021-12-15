@@ -1,0 +1,65 @@
+.footer {
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: black;
+  & .container_ {
+    background-image: url(https://www.thecoffeehouse.com/_nuxt/img/footer-desktop.727f3a2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    & .row {
+      margin-top: 10px;
+      .footer_logo {
+        padding-top: 5%;
+        margin: 70px 45px;
+      }
+    }
+  }
+  & .footer_navbar_item {
+    border-bottom: 2px solid white;
+  }
+  .footer_nav_list {
+    list-style: none;
+    & span {
+      color: white;
+    }
+    & .footer_navbar_item_body {
+      color: white;
+    }
+  }
+  .footer_navbar_item_body {
+    & a {
+      text-decoration: none;
+      color: white;
+      &:hover {
+        color: rgb(219, 216, 216);
+      }
+    }
+  }
+  & .footer_bottom {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    & .footer__bottom-logo {
+      float: right;
+    }
+
+    & .footer__bottom__text {
+      color: white;
+      font-size: 14px;
+    }
+  }
+}
+.changeplus[aria-expanded=true] .icon>.fa-plus
+{
+    display: none;
+}
+.changeplus[aria-expanded=false] .icon>.fa-minus
+{
+    display: none;
+}

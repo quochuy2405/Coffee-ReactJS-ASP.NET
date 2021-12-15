@@ -1,0 +1,84 @@
+.UpdateStore{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 95%;
+    height: 90%;
+    & #inputFile {
+        display: none;
+    }
+    & .inputFileLabel{
+        width: 100%;
+        z-index: 9999;
+    }
+    & .dataAdd{
+     
+        width: 80%;
+        height: 65vh;
+        margin: 0 auto;
+        overflow: scroll;
+       display: block;
+       border-radius: 10px;
+       border: 1px solid rgba(190, 190, 190, 0.39);
+    }
+   & .button__submit{
+       width: 60%;
+       margin: 0 auto ;
+   }
+    & .inputData{
+        width: 60%;
+        margin: 10px auto;
+        & input{
+            height: 47px;
+          }
+      & .description{
+        color: rgb(116, 115, 115);
+      }
+        & input,textarea,.box_input{
+            margin-bottom: 0.9rem;
+        color: rgb(116, 115, 115);
+        border: 2px solid rgb(42, 114, 72);
+        &:focus{
+            box-shadow: 0 0 0 0.25rem rgba(20, 92, 37, 0.658);
+        }
+        }
+    }
+    & .box_input {
+      
+        width: 100%;
+        height: 200px;
+        border: 2px solid rgb(92, 168, 212);
+        border-radius: 5px;
+        position: relative;
+        color: rgb(80, 191, 255);
+
+        & .img_preview {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+            object-position: center;
+            z-index: 11;
+        }
+        & .textUpload{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+        & .iconUpLoad {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            opacity: 0.6;
+            z-index: 0;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

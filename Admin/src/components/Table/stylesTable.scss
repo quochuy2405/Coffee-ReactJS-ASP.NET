@@ -1,0 +1,118 @@
+.Page.navigation {
+  position: absolute;
+  top: 0px;
+  right: 2.3%;
+}
+.nav-item button {
+  color: #000000;
+  font-weight: bold;
+  &:hover{
+    color: rgb(139, 139, 139);
+  }
+}
+.nav {
+  padding-left: 40px;
+  margin-bottom: -40px;
+  margin-top: 20px;
+}
+.css-wjh20t-MuiPagination-ul{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.body_page {
+  // max-width: 930px;
+  margin: 40px auto;
+  width: 90%;
+  height: fit-content;
+  max-height: calc(100% - 145px);
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    border-radius: 20px;
+    width: 6.5px;
+    height: 6.5px;
+    background-color: white;
+  }
+  & .itemTable {
+   font-weight: 500;
+    height: fit-content;
+    width: 100%;
+    box-shadow: 0px 5px 10px #8d8d8d;
+    & .text_over{
+      max-width: 200px;
+      min-width: 200px;
+      text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    & tr {
+      
+      line-height: 50px;
+      & p {
+      white-space: nowrap;
+      }
+    }
+    & button {
+      font-weight: 600;
+      border-width: 2px;
+      color: rgb(85, 85, 85);
+    }
+    & tbody {
+      & .btn{
+        white-space: nowrap;
+      }
+      & tr {
+        opacity: 0.9;
+        & td {
+          border: 1px solid  rgba(95, 158, 160, 0.514);
+          padding:0 10px ;
+          
+        }
+        &:hover{
+          background-color: #afafaf;
+          color: white;
+    
+          & .btn {
+            color: white;
+          }
+          & .status {
+            &.status-delivering {   color: rgb(236, 236, 236);}}
+        }
+        &:last-child {
+          border-radius: 0 0 5px 5px;
+        }
+      }
+      & tr:nth-child(even) td {
+        background-color: #abb0bd57;
+        box-shadow: 2px 2px 5px rgb(184, 184, 184);
+      }
+    }
+    & .headerTable th {
+      border: 1px solid  rgba(95, 158, 160, 0.459);
+    
+      box-shadow: 0 5px 10px rgb(184, 184, 184);
+      background-color: #5ba0ce;
+      opacity: 0.8;
+      color: rgb(236, 236, 236);
+      white-space: nowrap;
+      padding:0 10px;
+      padding-left:20px ;
+      &:first-child {
+        border-radius: 5px 0 0 0;
+      }
+      &:last-child {
+        border-radius: 0 5px 0 0;
+      }
+    }
+
+    & .status {
+      &.status-delivering {
+        color: #688b9b;
+      }
+    }
+  }
+}

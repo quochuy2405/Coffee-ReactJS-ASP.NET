@@ -1,0 +1,201 @@
+@import 'variables.css';
+@media screen and (max-width: 450px){
+  .Sale_Card{
+    width: 100%;
+    margin: 10px auto;
+  }
+  .ListTicket{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .App .DetailsUser .InfoPerson .Info-Center .avata{
+    margin: 0 auto;
+  }
+  .App .DetailsUser .infoAcc,  .App .DetailsUser .InfoDetails .bodyInfoDetails,  .App .InfoPerson{
+   width: 100%;
+  }
+  .App .DetailsUser .InfoPerson .Info-Center{
+    position: unset;
+    top: unset;
+    left: unset;
+    transform: unset;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+ .App .filter_store{
+  display: block;
+ }
+  :root {
+    --width-iteam_col: 8.813rem !important;
+    --height-iteam_col: 16rem;
+  }
+  .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .btn_choose {
+    width: 80%;
+  }
+  .App .SanPhamTuNha {
+    width: 100%;
+  }
+  .App .ListTicket {
+    width: 80vw;
+  }
+  .App .Sliders {
+    width: 97%;
+    border-radius: 5px;
+  }
+  .App .Sliders .Slider_imgs .Slider_img img {
+    border-radius: 0;
+  }
+
+  .App .Tags ul .Tag {
+    margin-right: 25px;
+    font-size: 1.1rem;
+  }
+  .App .Tags ul .icon {
+    line-height: 30px;
+  }
+  .App .Login .loginFrom {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .App .Login .loginFrom .img_group img {
+    border-radius: 0;
+  }
+  .App .SignIn .signinFrom {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .App .SignIn .signinFrom .img_group img {
+    border-radius: 0;
+  }
+  .App .Checkout_com .checkout__body .body__Pay {
+    margin: 0 0 40px 0;
+  }
+  .App .Checkout_com .checkout__body .Total .thanhtien {
+    padding: 20px 0;
+  }
+  .App .Header .Hearder__TilteName {
+    display: none;
+  }
+  .App .homeIcon {
+    visibility: visible;
+    line-height: var(--height-header);
+    font-size: 25px;
+    display: inline;
+  }
+  .App .Header .Header__User_Store {
+    flex: 1 1;
+    justify-content: center;
+  }
+  .App .Header .Header__User_Store div {
+    margin: 0px 20px;
+  }
+  .MuiDialogContent-dividers .bodyDetails {
+    display: block;
+  }
+  .MuiDialogContent-dividers .bodyDetails .imgDetail img {
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    height: 252px;
+  }
+  #Nav_Link {
+    display: none;
+  }
+  #Header_tran {
+    display: none;
+  }
+  .App .Header .hamber {
+    visibility: visible;
+  }
+  .App .Checkout_com .checkout__body {
+    width: 93%;
+    margin: 0 auto;
+    display: block;
+  }
+  .App .Checkout_com .checkout__body .body__bill {
+    margin: 20px 0;
+  }
+
+  .App .body_page .text_over{
+    max-width: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 601px) {
+
+  .App .Checkout_com .checkout__body {
+    width: 93%;
+    margin: 0 auto;
+    display: block;
+  }
+  .App .Checkout_com .checkout__body .body__bill {
+    margin: 20px 0;
+  }
+  .App .body_page .titlePro{
+    max-width: 75px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (max-width: 1056px) and (min-width: 601px) {
+  #Nav_Link {
+    display: none;
+  }
+  .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .btn_choose {
+    width: 60%;
+  }
+  #Header_tran {
+    display: none;
+  }
+  .App .Header .hamber {
+    visibility: visible;
+  }
+
+  .App .Login .loginFrom {
+    width: 80%;
+    height: 80%;
+  }
+
+  
+  .App .SignIn .signinFrom {
+    width: 80%;
+    height: 80%;
+  }
+  .App .Sliders {
+    width: 90%;
+    height: 50vh;
+    border-radius: 0;
+  }
+  .MuiDialog-container.MuiDialog-scrollPaper.css-hz1bth-MuiDialog-container {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+@media screen and (max-width: 1128px) and (min-width: 1056px) {
+  .App .Header .Hearder__IpAddress {
+    min-width: 200px;
+    max-width: 200px;
+  }
+  .App .Header .Hearder__IpAddress .Trans__text .address {
+    width: 100px;
+  }
+}

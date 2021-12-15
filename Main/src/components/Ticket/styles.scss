@@ -1,0 +1,43 @@
+.Sale_Card {
+  display: flex;
+  margin: 20px auto;
+  width: 70%;
+
+  box-shadow: 10px 7px 13px 4px #cecece;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://www.thecoffeehouse.com/_nuxt/img/card_voucher.321d7af.png);
+
+  & .img_Card img {
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+  }
+  & .img_Card {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  & p {
+    margin: 0;
+  }
+  & .contend_card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex: 2;
+    & > div {
+      width: 80%;
+      margin: 0 auto;
+    }
+    & .due_date {
+      color: #979696;
+    }
+    & .use_now {
+      color: var(--color-main);
+      cursor: pointer;
+    }
+  }
+}

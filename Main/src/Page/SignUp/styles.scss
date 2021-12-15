@@ -1,0 +1,115 @@
+@import '../../variables.css';
+.SignIn {
+  width: 100%;
+  background-image: url('https://images.pexels.com/photos/3220889/pexels-photo-3220889.jpeg?auto=compress&cs=tinysrgb&w=2260&h=2750&dpr=1');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - var(--height-header));
+  position: relative;
+  isolation: isolate;
+  & .dot {
+    mix-blend-mode: multiply;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border-radius: 50%;
+    background-color: #ff6f1ba4;
+  }
+  & .signinFrom {
+    position: absolute;
+    display: flex;
+    width: 50%;
+    height: 80%;
+    left: 50%;
+    top: 50%;
+
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    & .signin,
+    .img_group {
+      flex: 1;
+    }
+    & .img_group {
+      position: relative;
+      & .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 99;
+        width: 60%;
+        transform: translate(-50%, -50%);
+
+        font-size: 1.5rem;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        text-shadow: 5px 5px 8px rgb(20, 20, 20);
+        text-align: center;
+        font-weight: bold;
+        line-height: 40px;
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+      }
+    }
+
+    & .img_group img {
+      object-fit: cover;
+      object-position: bottom;
+      width: 100%;
+      height: 100%;
+      border-radius: 30px 0 0 30px;
+      opacity: 0.9;
+    }
+    & .signin {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      & form {
+        width: 100%;
+        & .title {
+          text-align: center;
+          padding-top: 10px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        & input,
+        .btn-success {
+          width: 80%;
+          height: 45px;
+          display: block;
+          margin: 6px auto;
+        }
+        & input {
+          padding: 2px 5px 2px 30px;
+          outline: none;
+          border-width: 0 0 2px 0;
+        }
+        .input_signin {
+          display: flex;
+          & i {
+            position: absolute;
+            font-size: 1.6rem;
+            line-height: 65px;
+            left: 10%;
+            color: #88888860;
+          }
+        }
+      }
+      .forgot_pass {
+        width: 80%;
+        margin: 10px auto;
+        text-align: center;
+        text-decoration: none;
+        color: rgb(95, 95, 95);
+        opacity: 0.7;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    & input {
+      display: block;
+    }
+  }
+}

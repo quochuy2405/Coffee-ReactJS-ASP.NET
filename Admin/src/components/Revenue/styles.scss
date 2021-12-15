@@ -1,0 +1,89 @@
+.Revenue {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    position: relative;
+    margin: auto;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 20% 15% 15% 25% ;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+
+    grid-template-areas:
+        "h2 h2 h3 h3 h3"
+        "h2 h2 h3 h3 h3"
+        "h2 h2 h4 h4 h4"
+        "h1 h1 h4 h4 h4";
+    & .Revenue__Day,
+    .Revenue__Week,
+    .Revenue__Month,
+    .Revenue__Year {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 5px 10px rgb(92, 91, 91);
+    }
+    & .Title_Revenue{
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    & .Revenue__Day {
+        grid-area: h1;
+    }
+    & .Revenue__Week {
+        grid-area: h2;
+        & canvas{
+            transform: scale(0.8)
+            
+        }
+    }
+    & .Revenue__Month {
+        grid-area: h3;
+    }
+    & .Revenue__Year {
+        grid-area: h4;
+        & .months_of_Year{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 90%;
+            gap: 30px;
+            & div{
+        
+                
+                border-radius: 5px;
+                align-items: flex-end;
+                 height: 100%;
+                 width: 8%;
+                 background-color: #2694c4;
+                 position: relative;
+                 & span{
+                     position: absolute;
+                     bottom: 0;
+                     left: 50%;
+                     transform: translateX(-50%);
+                     color: white;
+                
+                 }
+            }
+        }
+    }
+}
+.color_day{
+  color: rgb(48, 180, 233);
+}
+.color_month{
+    color: rgb(255, 192, 56);
+}
+.color_week{
+    color: rgb(255, 112, 56);
+}
+.color_year{
+    color: rgb(255, 56, 56);
+}

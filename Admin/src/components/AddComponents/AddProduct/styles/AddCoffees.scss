@@ -1,0 +1,109 @@
+.AddCoffee{
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 88%;
+    
+    & #inputFile {
+        display: none;
+    }
+
+    & .inputFileLabel{
+        width: 100%;
+        z-index: 9999;
+    }
+    & .dataAdd{
+        width: 90%;
+        height:65vh;
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: 40% 50%;
+        grid-template-areas:
+        "h1 h2"
+        "h3 h3" ;
+        padding: 20px;
+        justify-content: center;
+        overflow: scroll;
+         border: 1px solid rgba(190, 190, 190, 0.39);
+            border-radius: 10px;
+      & .data--short_text{
+          margin: 0 20px;
+          grid-area: h1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+      }
+      & .data--large_text{
+      
+        grid-area: h2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    & .button--submit{
+        grid-area: h3;
+        width: 40%;
+        margin: 0 auto;
+    }
+    }
+    & .inputData{
+        width: 80%;
+   
+       
+      & .description{
+        color: rgb(116, 115, 115);
+      }
+      & input{
+        height: 47px;
+      }
+       & input,textarea,.box_input{
+           margin-bottom: 0.9rem;
+        color: rgb(116, 115, 115);
+        border: 2px solid rgb(42, 114, 72);
+        &:focus{
+            box-shadow: 0 0 0 0.25rem rgba(20, 92, 37, 0.658);
+        }
+       }
+    }
+    & .box_input {
+      
+        width: 100%;
+        height: 165px;
+        border: 2px solid rgb(92, 168, 212);
+        border-radius: 5px;
+        position: relative;
+        color: rgb(80, 191, 255);
+
+        & .img_preview {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+            object-position: center;
+            z-index: 11;
+        }
+        & .textUpload{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+        & .iconUpLoad {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            opacity: 0.6;
+            z-index: 0;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,339 @@
+
+
+@import "../../variables.css";
+.Header {
+  display: flex;
+  padding: 0 40px;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 999;
+  background-image: var( --color-image-main);
+  color: white;
+  & .iconUserLogined{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    
+    & img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #dfdfdf;
+      opacity: 0.9;
+    }
+    & .dropMenu-user{
+        position: absolute;
+        width: 200px;
+        height: fit-content;
+        background-color: white;
+        border-radius: 5px;
+        right: 0;
+        top: calc(var(--height-header) - 10px);
+        color: black;
+        font-size: 14px;
+        margin: 0;
+        list-style: none;
+        padding: 0;
+        z-index: 999;
+        visibility: hidden;
+        box-shadow: 3px 3px 10px #5e5e5e;
+        & a{
+          color: black;
+          text-decoration: none;
+        }
+        &::before{
+          content: "";
+          position: absolute;
+          border-width: 10px;
+          border-color: transparent transparent white transparent;
+         border-style: solid;
+         top: -18px ;
+         right: 5px;
+         z-index: -1;
+        }
+        & li{
+          line-height: 16px;
+          padding: 5px 10px;
+          margin: 0;
+          height: 30px;
+
+          & p{
+            margin: 0;
+          }
+        
+          &:hover{
+            background-color: rgba(219, 219, 219, 0.445);
+          }
+          &:first-child{
+            border-radius:  5px 5px 0 0;
+          }
+          &:last-child{
+            border-radius: 0 0 5px 5px;
+            border-top:2px solid rgba(155, 155, 155, 0.582) ;
+          }
+        }
+    }
+  }
+  & .btn.btn-outline-success{
+    width: 110px;
+  }
+  & .hamber{
+    visibility: hidden;
+  }
+  & .icon_store{
+    font-size: 1.6rem;
+    & .icon_checkout{
+      margin-top: -8px;
+    }
+    & .MuiBadge-badge{
+      top:30px ;
+    }
+  }
+  width: 100%;
+  height: var(--height-header);
+  .Header__TilteName
+
+  { 
+    
+    & a {
+    color: aliceblue;
+    text-decoration: none;
+   }
+   & i {
+     display: none;
+   }
+    & svg {
+      padding: 10px;
+     width: 205px;
+     height: 85px;
+     border-radius: 30px;
+  }
+  }
+  
+  
+
+  & .Hearder__IpAddress {
+    display: flex;
+    min-width: 260px;
+    max-width: 260px;
+    height: calc(100% - 20px);
+    margin: auto 0;
+    background-color: var(--color-main);
+    border-radius: 40px;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all linear 0.2s;
+    &:hover{
+      transition: all linear 0.2s;
+      background-color: var(--color-main-act);
+    }
+
+    & .Trans__img {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px;
+      & img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    & .Trans__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      & p {
+        margin: 0;
+      }
+     & .address
+     {
+      white-space: nowrap; 
+      width: 170px;
+      overflow: hidden;
+      text-overflow: ellipsis; 
+     }
+    }
+    & .arrow_down {
+      line-height: calc(var(--height-header) - 20px);
+      padding: 0 10px;
+    }
+  }
+  & .Header__User_Store {
+    font-size: 30px;
+    display: flex;
+    line-height: var(--height-header);
+    & div {
+      & a {
+        color: white;
+      }
+      &:hover .fa-shopping-cart {
+        opacity: 0.7;
+        transition: all linear 0.1s;
+      }
+
+      margin: 0 20px;
+    }
+  }
+}
+.icon_user{
+  &:hover{
+    cursor: pointer;
+  }
+}
+.Header__NavLink ul {
+  display: flex;
+  list-style: none;
+  color: white; 
+  font-weight: 600;
+  line-height: var(--height-header);
+  & a {
+    text-decoration: none;
+    color: white;
+  }
+  & li {
+    padding: 0 10px;
+    line-height: var(--height-header);
+    display: flex;
+      flex-direction: column;
+     justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    
+    & .active p{
+      padding: 5px 0;
+      line-height: normal;
+      border-bottom: 2px solid white;
+    }
+  }
+  & li:hover p {
+    padding: 5px 0;
+    line-height: normal;
+    border-bottom: 2px solid white;
+   
+  }
+
+}
+.choose_ForBuy{
+  position: absolute;
+  width: 60%;
+  height: 8rem;
+  background-color: white;
+  margin: 150px auto;
+  border-radius: 30px;
+ 
+  & .choose_input
+        
+  { position: relative;
+    display: block;
+    width: 90%;
+    height: 3rem;
+    margin: 0 auto;
+  
+    border-radius: 5px;
+    box-shadow: 5px 3px 10px 8px rgba(199, 199, 199, 0.356);
+    & input{    
+    position: relative;
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+
+    outline: none;
+    border: none;
+
+   
+  }
+  & .btn_clear{
+    position: absolute;
+    right: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+   color: #acacac;
+   &:hover{
+     color: #000;
+   }
+  }
+
+  } 
+  & .choose{
+    position: relative;   
+    display: flex;
+    width: 300px;  
+    justify-content: space-between;
+    
+    margin: 0 auto;
+    top: -30px;
+
+    border-radius: 30px;
+    background-color: white;
+   border: 2px var(--color-main) dashed ;
+     & .choose_img{
+      width: 57px;
+      height: 57px;
+      padding: 5px;
+      
+     }
+     & .choose_text{
+       font-size: 0.9rem;
+       color: var(--color-main);
+       line-height: 57px;
+     }
+     & .choose_giaohang , .choose_mangdi{
+      
+       width: 140px;
+       height: 57px;
+       display: flex;
+       justify-content: space-around;
+
+       cursor: pointer; 
+       background-color: white;  
+       border-radius: 35px;
+      &.active{
+        background-color: var(--color-main);
+        opacity: 0.8;
+        
+        & .choose_text{color: white;}
+      }
+     }
+  }
+}
+.choose_ForBuy{
+  visibility: hidden;
+  opacity: 0;
+  transition: all linear 0.1s;
+}
+#check_choose:checked ~ .choose_ForBuy{
+  visibility: visible;
+  opacity: 1;
+  transition: all linear 0.3s;
+}
+#check_choose:checked ~  .overlay{
+  visibility: visible;
+  opacity: 1;
+  transition: all linear 0.3s;
+}
+.overlay{
+  width: 100%;
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  transition: all linear 0.1s;
+  height: 100vh;
+  background-color: #bdbdbda4;
+}
+
+.fa-shopping-cart{
+  color: white;
+margin-top: -2px;
+}
+.homeIcon{
+  visibility: hidden;
+  display: none;
+}
+.btn-success{
+  width: 110px;
+}
+#dropUser:checked ~ .dropMenu-user{
+  visibility: visible ;
+}
